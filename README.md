@@ -8,15 +8,16 @@ After setting up the LANs logical topology I statically assigned the router an I
 # Configuring DHCP
 I set up the routers DHCP service using CLI commands and here are the specific commands I used to set up an address pool of 192.162.0.2 -192.162.0.20
 
-
-- configure terminal
-- ip dhcp excluded-address 192.162.0.1
-- ip dhcp pool MY_POOL
-- network 192.162.0.0 255.255.255.0
-- default-router 192.162.0.1
-- dns-server 8.8.8.8
-- lease 8
-- address 192.162.0.2 192.162.0.20 
+```
+ configure terminal
+ ip dhcp excluded-address 192.162.0.1
+ ip dhcp pool MY_POOL
+ network 192.162.0.0 255.255.255.0
+ default-router 192.162.0.1
+ dns-server 8.8.8.8
+ lease 8
+ address 192.162.0.2 192.162.0.20 
+```
 
 
 # Testing and confirming Network connectivity
